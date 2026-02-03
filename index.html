@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Akan Name Generator</h1>
+            <p class="description">Discover your Ghanaian day name based on your birth date and gender.</p>
+        </header>
+        
+        <main>
+            <div class="form-container">
+                <h2>Enter Your Details</h2>
+                <form id="akanForm">
+                    <div class="input-group">
+                        <label for="birthYear">Birth Year (e.g., 1989):</label>
+                        <input type="number" id="birthYear" min="1900" max="2023" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="birthMonth">Birth Month (1-12):</label>
+                        <input type="number" id="birthMonth" min="1" max="12" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="birthDay">Birth Day (1-31):</label>
+                        <input type="number" id="birthDay" min="1" max="31" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Gender:</label>
+                        <div class="gender-options">
+                            <label>
+                                <input type="radio" name="gender" value="male" required>
+                                Male
+                            </label>
+                            <label>
+                                <input type="radio" name="gender" value="female" required>
+                                Female
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Generate Akan Name</button>
+                </form>
+            </div>
+            
+            <div id="result" class="result-container">
+                <!-- Results will appear here -->
+            </div>
+            
+            <div class="info-section">
+                <h3>What are Akan Names?</h3>
+                <p>Akan names are derived from Ghanaian culture. Children are given specific names based on the day of the week they were born.</p>
+                
+                <table class="names-table">
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Male Name</th>
+                            <th>Female Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Sunday</td><td>Kwasi</td><td>Akosua</td></tr>
+                        <tr><td>Monday</td><td>Kwadwo</td><td>Adwoa</td></tr>
+                        <tr><td>Tuesday</td><td>Kwabena</td><td>Abenaa</td></tr>
+                        <tr><td>Wednesday</td><td>Kwaku</td><td>Akua</td></tr>
+                        <tr><td>Thursday</td><td>Yaw</td><td>Yaa</td></tr>
+                        <tr><td>Friday</td><td>Kofi</td><td>Afua</td></tr>
+                        <tr><td>Saturday</td><td>Kwame</td><td>Ama</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Akan Name Generator Project &copy; 2023</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
