@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akan Name Generator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Akan Name Generator - Ghana Culture</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Akan Name Generator</h1>
-            <p class="description">Discover your Ghanaian day name based on your birth date and gender.</p>
+            <div class="ghana-stripes"></div>
+            <p class="description">Akan names are from Ghana. They symbolize the day of the week a child is born. These names are different for boys and girls.</p>
         </header>
         
         <main>
@@ -19,7 +20,7 @@
                 <form id="akanForm">
                     <div class="input-group">
                         <label for="birthYear">Birth Year (e.g., 1989):</label>
-                        <input type="number" id="birthYear" min="1900" max="2023" required>
+                        <input type="number" id="birthYear" min="1900" max="2024" required>
                     </div>
                     
                     <div class="input-group">
@@ -52,16 +53,23 @@
             
             <div id="result" class="result-container">
                 <!-- Results will appear here -->
+                <div class="result-content">
+                    <div class="ghana-flag">🇬🇭</div>
+                    <h3>Your Akan Name Awaits!</h3>
+                    <p>Fill out the form to discover your Ghanaian name</p>
+                </div>
             </div>
             
             <div class="info-section">
                 <h3>What are Akan Names?</h3>
                 <p>Akan names are derived from Ghanaian culture. Children are given specific names based on the day of the week they were born.</p>
                 
+                <div class="ghana-stripes"></div>
+                
                 <table class="names-table">
                     <thead>
                         <tr>
-                            <th>Day</th>
+                            <th>Day of Week</th>
                             <th>Male Name</th>
                             <th>Female Name</th>
                         </tr>
@@ -80,10 +88,17 @@
         </main>
         
         <footer>
-            <p>Akan Name Generator Project &copy; 2023</p>
+            <p>Akan Name Generator Project &copy; <span id="currentYear">2024</span> | Celebrating Ghanaian Heritage</p>
         </footer>
     </div>
     
+    <!-- External JavaScript file -->
     <script src="script.js"></script>
+    
+    <!-- Inline JavaScript for copyright year -->
+    <script>
+        // Auto-update copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
