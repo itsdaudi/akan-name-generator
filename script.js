@@ -81,7 +81,7 @@ function getAkanName(gender, dayOfWeek) {
  */
 function validateInput(year, month, day, gender) {
     if (!year || !month || !day || !gender) {
-        return '❌ Please fill in all fields (year, month, day, and gender).';
+        return 'git Please fill in all fields (year, month, day, and gender).';
     }
     
     const y = Number(year);
@@ -89,13 +89,13 @@ function validateInput(year, month, day, gender) {
     const d = Number(day);
     
     if (!Number.isInteger(y) || y < 1800 || y > 2100) {
-        return '❌ Year must be between 1800 and 2100.';
+        return ' Year must be between 1800 and 2100.';
     }
     if (!Number.isInteger(m) || m < 1 || m > 12) {
-        return '❌ Month must be between 1 and 12.';
+        return ' Month must be between 1 and 12.';
     }
     if (!Number.isInteger(d) || d < 1 || d > 31) {
-        return '❌ Day must be between 1 and 31.';
+        return ' Day must be between 1 and 31.';
     }
     
     return null; // No errors
@@ -119,7 +119,7 @@ function displayResult(message, isSuccess = false, akanName = '', dayName = '') 
     
     if (isSuccess && akanName) {
         content += `
-            <h3>🎉 Your Akan Name</h3>
+            <h3>Your Akan Name</h3>
             <div class="akan-name-display">${akanName}</div>
             <div class="birthday-info">Born on a ${dayName}</div>
         `;
@@ -203,7 +203,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const dayOfWeek = getDayOfWeekFromDate(yNum, mNum, dNum);
             
             if (!dayOfWeek) {
-                displayResult('❌ Invalid date! Please enter a valid date (e.g., Feb 29 only in leap years).', false);
+                displayResult(' Invalid date! Please enter a valid date (e.g., Feb 29 only in leap years).', false);
                 return;
             }
             
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const akanName = getAkanName(selectedGender, dayOfWeek);
             
             if (!akanName) {
-                displayResult('⚠️ Could not generate name. Please check your input.', false);
+                displayResult(' Could not generate name. Please check your input.', false);
                 return;
             }
             
