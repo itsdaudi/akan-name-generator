@@ -17,7 +17,7 @@ body {
 .container {
     max-width: 1000px;
     margin: 0 auto;
-    background: #fffaf5;
+    background: #797D81;
     padding: 30px;
     border-radius: 24px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
@@ -48,7 +48,7 @@ h1 {
 
 .description {
     font-size: 1.2rem;
-    background: #fff1e0;
+    background: #bba58a;
     padding: 18px 24px;
     border-radius: 40px 8px 40px 8px;
     color: #4a3b2c;
@@ -59,12 +59,12 @@ h1 {
 /* ===== RESULT SECTION ===== */
 .result-container {
     background: linear-gradient(145deg, #1e3f2e, #163525);
-    color: white;
+    color: rgb(128, 97, 97);
     padding: 30px;
     border-radius: 24px;
     margin: 30px 0;
     text-align: center;
-    box-shadow: 0 10px 0 #0e2b1f;
+    box-shadow: 0 10px 0 #65716c;
     transition: transform 0.3s ease;
 }
 
@@ -82,7 +82,7 @@ h1 {
         #c41e1e 66.66%);
     margin: 0 auto 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(31, 22, 22, 0.2);
 }
 
 .result-content h3 {
@@ -119,7 +119,7 @@ h1 {
 
 /* ===== FORM STYLES ===== */
 .form-card {
-    background: #fef7e9;
+    background: #b7af9d;
     padding: 30px;
     border-radius: 24px;
     border: 1px solid #e6d5b8;
@@ -193,7 +193,7 @@ input[type=radio] + label {
 }
 
 button {
-    background: #c41e1e;
+    background: #b25c5c;
     color: white;
     border: none;
     padding: 16px 40px;
@@ -220,7 +220,7 @@ button:hover {
     width: 100%;
     border-collapse: collapse;
     margin: 30px 0;
-    background: #faf3e0;
+    background: #b7af9d;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
