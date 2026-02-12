@@ -102,4 +102,5 @@ Repository: akan-name-generator
 This project is licensed for educational purposes as part of Moringa School curriculum.
 
 🔗 Live Demo
-Live Application: https://itsdaudi.github.io/akan-name-generator/
+Live Application: 
+https://github.com/itsdaudi/akan-name-generator
